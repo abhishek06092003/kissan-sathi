@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+
+  margin: 0;
+
+  padding: 0;
+
+  background: #071018;
+
+  color: white;
+
+  font-family: Arial, sans-serif;
+
+  overflow-x: hidden;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus {
+  -webkit-text-fill-color: #ffffff !important;
+  caret-color: #ffffff !important;
+  background-color: #0b1622 !important;
+  box-shadow: 0 0 0px 1000px #0b1622 inset !important;
+}
+
+.auth-input {
+  color: #ffffff !important;
+  -webkit-text-fill-color: #ffffff !important;
+  caret-color: #ffffff !important;
+}
+
+.auth-input::placeholder {
+  color: rgba(255, 255, 255, 0.7) !important;
+}
+
+* {
+
+  box-sizing: border-box;
+}
+
+.glass-card {
+
+  background: rgba(17, 34, 51, 0.75);
+
+  backdrop-filter: blur(14px);
+
+  border: 1px solid rgba(255,255,255,0.05);
+
+  box-shadow:
+    0 0 20px rgba(0,255,153,0.08);
+
+  transition: 0.3s;
+}
+
+.glass-card:hover {
+
+  transform: translateY(-5px);
+
+  box-shadow:
+    0 0 30px rgba(0,255,153,0.15);
+}
+::-webkit-scrollbar {
+
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+
+  background: #00ff99;
+
+  border-radius: 20px;
+}
